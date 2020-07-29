@@ -1,22 +1,31 @@
 {
-  "name": "electron-quick-start",
+  "name": "voucher-generator",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A simple voucher generator for Adopisoft",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "build": "yarn postinstall && APP_DEV=true electron .",
+    "pack": "electron-builder --dir",
+    "dist": "yarn electron-builder",
+    "dist:win:x32": "yarn electron-builder --win --ia32",
+    "dist:win:x64": "yarn electron-builder --win --x64",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "adopisoft",
+    "voucher"
   ],
-  "author": "GitHub",
+  "author": "Maron Aquillo",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^2.0.0",
+    "electron-builder": "21.2.0",
+    "electron-reload": "^1.5.0"
+  },
+  "dependencies": {
+    "escpos": "^2.4.11",
+    "fs": "^0.0.1-security",
+    "usb": "^1.6.3"
   }
 }

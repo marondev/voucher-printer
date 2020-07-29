@@ -1,0 +1,41 @@
+.dropzone {
+    border: 2px dashed #aaa;
+    border-radius: 5px;
+    padding: 50px;
+    margin: 50px;
+    background: white;
+    color: #aaa;
+    text-align: center; }
+    .dropzone .dz-message {
+      font-weight: 400;
+      margin: 0; }
+      .dropzone .dz-message .note {
+        font-size: 0.6em;
+        font-weight: 200;
+        display: block;
+        margin-top: 0; }
+        .dropzone .dz-message .link {
+          color: #71C2FF; 
+          font-weight: 700; }
+
+.dropzone.dz-drag-hover {
+  border: 2px dashed #71C2FF;}
+  .dz-drag-hover .image {
+    opacity: 0.5; }
+
+
+html, body {
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4rem;
+  background: #F3F4F5;
+  color: #646C7F;
+  text-rendering: optimizeLegibility; }
+  @media (max-width: 600px) {
+    html, body {
+      font-size: 18px; } }
+  @media (max-width: 400px) {
+    html, body {
+      font-size: 16px; } }
+  

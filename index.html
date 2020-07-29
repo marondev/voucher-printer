@@ -2,15 +2,23 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>ADOPISOFT Voucher Generator</title>
+    <link rel="stylesheet" href="./assets/css/basic.css" />
+    <link rel="stylesheet" href="./assets/css/dropzone.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <form action="/file-upload" class="dropzone" id="voucher">
+      <div class="dz-message">
+        <img src="./assets/images/upload.png" alt="" class="image">
+        <div>
+          Drag and Drop, or <span class="link">Browse</span> your file<br>
+          <span class="note">(This will print the voucher automatically)</span>
+        </div>
+      </div>
+    </form>
 
+    <script src="./assets/js/dropzone.js"></script>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
